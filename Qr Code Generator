@@ -1,0 +1,7 @@
+import pyqrcode
+import png
+data = "LInkedin.com/in/yash-gupta-0994761b3/"
+qr = pyqrcode.create(data)
+qr.png("myqr.png", scale=6)
+from IPython.display import Image
+Image("myqr.png")
